@@ -8,14 +8,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
+    <!-- Bostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- Akhir boostrap icon -->
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <title>RzkMlvn</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Rizki Agustian</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +31,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -65,14 +69,14 @@
           </div>
         </div>
         <div class="row justify-content-center fs-6">
-          <div class="col-4">
+          <div class="col-md-4">
             <p>
               Mirisnya indonesia beda-bedakan manusia tiada henti-hentinya, rasis semakin mewabah pribadi biadab berotak tak beradab sekolah tinggi-tinggi kenapa tak berakhlak?? kau buta arti bhineka tunggal ika lupakan semboyan dari
               indonesia masih ku hormati, sang saka merah putih yang berkibar bhineka tunggal ika jadi tameng tuk bersandar berbeda tapi satu dibawah sayap garuda yang lebar persatuan indonesia berdiri kokoh bagai tiang pilar Lalu kenapa
               kalau kulit hitam? merah masih darah putih masih tulang bukan indonesia kalau tak beragam titik seragam terlahirkan sama mulut bukan kulit durian, lidah bukan pedang angkuhmu ketinggian - pola pikir unbrilian
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <p>
               seenak mulutmu muntahkan bangkai kebencian profesor yang botol ambroncius nababan, 1 lagi makhluk yang gagal berfikir sebut saja si dungu alias abu janda yang mangkir kala belajar di sekolah sejarah homo sapiens otak nya
               parkir bahkan diberi nyawa pun bukan golongan syakir pakai kelikir demi sang tuan di belakang haram jadi daging dengan duri di dalam bagai makhluk bertanduk dan suka menghasut leher mu tak enak kalau tidak bikib ribut!!
@@ -93,12 +97,12 @@
     <!-- Projects -->
     <section id="projects">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center mb-3">
           <div class="col">
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" style=>
               <img src="gambar.png" class="card-img-top" alt="gambar">
@@ -131,17 +135,50 @@
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-          <div class="col-md-4 mb-3" style=>
-            <img src="gambar3.png" class="card-img-top" alt="gambar3">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
           <!-- baris tempat untuk menambahkan projects -->
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,192L34.3,197.3C68.6,203,137,213,206,208C274.3,203,343,181,411,170.7C480,160,549,160,617,160C685.7,160,754,160,823,160C891.4,160,960,160,1029,176C1097.1,192,1166,224,1234,224C1302.9,224,1371,192,1406,176L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Projets -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email">                
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,96L30,112C60,128,120,160,180,154.7C240,149,300,107,360,106.7C420,107,480,149,540,149.3C600,149,660,107,720,117.3C780,128,840,192,900,208C960,224,1020,192,1080,186.7C1140,181,1200,203,1260,181.3C1320,160,1380,96,1410,64L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center pb-5">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rzkmlvn.id/" class="text-white fw-bold">RzkMlvn.ID</a></p>
+    </footer>
+    <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
